@@ -1,0 +1,200 @@
+#tuples_with_python
+t=(1,2,3)
+print(type(t))
+print(t[0])
+print(t[-1])
+t=('a','a','b')
+print(t.count('a'))
+print(t.index('a'))
+#t[0]='new'
+#print(t)
+#prevents data integretiy we cant do reassigned so that we get
+#error. where we want it dont get reassigned in larger pieces of code.
+myset = set()
+myset.add(1)
+myset.add(2)
+print(myset)
+myset.add(2)
+print(myset)
+mylist=[1,1,1,1,2,2,2,3,3,3,3]
+print(set(mylist))
+#booleans
+a=True
+print(a)
+h=False
+print(h)
+print(type(h))
+b= None
+# else you will get error not defined.
+print(2==2)
+print(2==1)
+print('hello'=='false')
+print('BYE'=='bye')
+print('2'==2)
+print(2.0==2)
+print(3!=3)
+print( 1< 2 < 3 )
+print( 1 > 2 and 2 > 3)
+print('h' == 'h') and (2==2)
+print('h' == 'h'and 2==2)
+print(not(1==1))
+print(not 1==1 )
+Jammu=True
+if Jammu:
+    print('Its True.')
+else:
+    print('Its False.')
+home = "jammu"
+if home == "jammu":
+    print("welcome")
+elif home =="himachal":
+    print("welcome")
+else:
+    print("bye")
+    
+my_dog = [1,2,3]
+for i in my_dog:
+    print(i)
+
+mylist=[1,2,3,4,5,6,7,8,9,10]
+for i in mylist:
+    print(i)
+
+mylist1=[1,2,3,4,5,6,7,8,9,10]
+for i in mylist1:
+    print("hello")
+    
+for num in mylist1:
+    if num%2==0:
+        print(num)
+    else:
+        print(f'odd number:{num}')
+        
+sum=0
+for i in mylist1:
+    sum=sum+i
+    
+print(sum)
+
+mystring = 'Ronaldo'
+for letter in mystring:
+    print(letter)
+
+for _ in 'Hello World':
+    print('cool')
+
+mylist = [(1,2) , (3,4) , (5,6),(7,8)]    
+print(mylist)
+for item in mylist:
+    print(item)
+    
+#tuple_unpacking
+for (a,b) in mylist:
+    print(a)
+    print(b)
+
+mylist10 = [(1,2,3),(5,6,7),(8,9,10)]
+for a,b,c in mylist10:
+    print(a)
+    print(b)
+    print(c)
+
+d = {'k1':1,'k2':2 ,'k3':3}
+for item in d.items():
+    print(item)
+    
+d = {'k1':1,'k2':2 ,'k3':3}
+for key,value in d.items():
+    print(value)
+    
+d = {'k1':1,'k2':2 ,'k3':3}
+for value in d.values():
+    print(value)    
+
+x = 0
+
+while x<5:
+    print(f'The current value of x is {x}')
+    x=x+1
+else:
+    print("X is not less than 5")
+#x+=1
+z=[1,2,3]
+for item in z:
+    pass
+
+print('End of Script')
+
+mystring = "wipro"
+for letter in mystring:
+    if letter=='p':
+        continue
+    print(letter)
+    
+mystring = 'wipropython'
+for letter in mystring:
+    if letter=='p':
+        break
+    print(letter)
+    
+for num in range(0,10,2):
+    print(num)
+    
+print(list (range (0,11,2)))
+print('\n')
+
+index=0
+word ='abcde'
+for letter in word:
+    print(word[index])
+    index+=1
+print('\n')
+#enrumate
+word = 'abcde'
+for index,letter in enumerate(word):
+    print(index)
+    print(letter)
+    print('\n')
+#zipping pair up ;P
+myli=[1,2,3]
+myli2=[a,b,c]
+myli3=[100,900,800]
+for item in zip(myli,myli2,myli3):
+    print(item)
+print('\n')
+print(list(zip(myli,myli2,myli3)))       
+================================================================================================================================================================================
+C:\Program Files\MongoDB\Server\3.4\bin
+mongod
+mongo
+show dbs
+use nameofdatabase
+db.collectionname(books).inser({"name":"monogodb book"})
+show collections;  ---> collection book
+db.books.find()     -----> inside book every details
+================================================================================================================================================================================
+Ansible commands 
+harsh7---@------o@
+sudo update-alternatives --config java 
+/etc/init.d/nexus start
+[Monday 1:06 PM] Harsh Sharma (Digital)
+    
+:q!
+​[Monday 1:07 PM] Harsh Sharma (Digital)
+    
+sudo nano  /etc/ansible/hosts
+​[Monday 1:08 PM] Harsh Sharma (Digital)
+    
+#192.168.29.122 ansible_ssh_user=harsh8 ansible_ssh_pass=tere ansible_become_pass=harsh
+​[Monday 1:16 PM] Harsh Sharma (Digital)
+    
+ansible all -m ping
+​[Monday 1:20 PM] Harsh Sharma (Digital)
+    
+sudo apt-get install sshpass -y
+​[Monday 1:35 PM] Harsh Sharma (Digital)
+    
+vi /etc/ansible/ansible.cfg
+​[Monday 1:40 PM] Harsh Sharma (Digital)
+    
+ansible-playbook demo.yml
