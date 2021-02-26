@@ -1,0 +1,117 @@
+***  Cheat Sheet of Linux ***
+
+How to get a linux system?
+1. Install linux os directly in Laptop or Desktop.
+2. Install Vmware and create a Vm.
+3. Install virtual box and create a vm.
+4. Provision a Linux VM on Cloud(aws/gcloud/azure etx).
+
+pwd (for current directory)
+cd..
+=======================================================================================================================================================================
+Linux File System Hierarchy
+TO SWITCH A ROOT USER: sudo su -
+ls / 
+
+/
+  slash is parent directory for all other directories 
+  This is top level directory
+  it is called as the root directory 
+  it is represented by forward slash(/)
+  C:\ of windows
+
+/root 
+  it is home directory for root user 
+  it provides working environment for root user 
+  C:\Documents and Settings\Administrator
+
+/home 
+	it is home diretory for other users.
+	it provides working environment for other users.
+	c:\Documents and Settings\username
+
+/usr 
+softwares are install in this directory
+/bin 
+it contains commands used by all users
+/sbin
+it is commands used only by superuser (root)
+/var 
+it contains variable data like mails, logfiles/ 
+=======================================================================================================================================================================
+commands 	What they do 
+date      	Show the current date and time
+cal    		Show this month's calendar
+uptime 		Show current uptime(which can help how much time its up and running)
+whoami 		who you are logged in as (which user you are logged in)
+finger 		Display information about user
+users   	Shows user information
+id
+man 		command Shows manual of command
+                (for example man who)
+username 	Shows your user name
+who      	display who is online
+		cpu utilization , id
+=======================================================================================================================================================================
+Command		Description
+ls -l -t        it will come as timestamp.
+ls -l -t -r     reverse.
+ls -ltr         which got recently updated or created.
+touch 		create a 0 bites file
+cat > filename 	create file and allow to write (ctrl c // to comeout)
+nano 		create a file if filename doesn’t exist. (sudo apt install nano -y) // (yum install nano -y)// you need to be a root user to install anything remeber.
+vi create a file if filename doesn’t exist
+rm remove a file
+mkdir Create a directory
+rmdir Remove a empty directory
+rm -rf dir1 Remove a directory (//recursive delete)
+rm -rf * // entire structure gets deleted.
+tree  shows whole directory structure
+# remeber you cant edit your file by using cat command.like it will override
+=======================================================================================================================================================================
+vi cheat sheet 
+i   - Insert at cursor (goes into insert mode)
+ESC - Terminate insert mode
+a   - Write after cursor (goes into insert mode)
+u   - Undo last change
+:w  - Save the file but keep it open
+:q  - Quit without saving
+:wq - Save the file and quit
+========================================================================================================================================================================
+View Files (less important)
+clear           to clear screen in linux.
+command         Command Description
+pwd             present working directory. 
+ls 		directory listing.
+cat filename    view file content.
+less            view a file page by page.
+more            output the contents of file.
+head            output the first 10 lines of file. || (head -20 filename) ==> first 20 lines of code. 
+tail            output the last 10 lines of file.  || (tail -20 filename) ==> last 20 line of code.
+=======================================================================================================================================================================
+ 	Command Description
+cd ..  ==>used to go to parent directory of current directory :P
+cp 	Copy a file
+cp -R dir1 dir2  // it will do recurvisely.
+mv 	Move a file
+grep 	Search for a pattern in a file
+cd 	Switch between directories
+sed 	search and replace particular pattern
+chmod 	Change file permissions
+chown 	Change Ownership of a file
+file 	Show what kind of file it is
+
+#       PermitTTY no
+#       ForceCommand cvs server
+PasswordAuthentication yes
+root@harsh7yo:~# grep Permit /etc/ssh/sshd_config
+#PermitRootLogin prohibit-password
+#PermitEmptyPasswords no
+# the setting of "PermitRootLogin without-password".
+#PermitTTY yes
+#PermitUserEnvironment no
+#PermitTunnel no
+#       PermitTTY no
+root@harsh7yo:~#
+Remember its case senstive.
+=======================================================================================================================================================================
