@@ -1,0 +1,38 @@
+Practice1 
+//import React, {Fragment,Component} from 'react'
+import React, {Component} from 'react'
+import './App.css';
+class App extends Component{
+  // react componnets contains all lifecycle methods.
+    render() {
+    const name = 'Harsh';
+    const foo = () => 'Wipro React Project';
+    const loading = false;
+    const showName = true;
+   /* if(loading){
+      return <h4> loading...</h4>
+    }
+    */
+    return (
+    <div className='App'>
+    {loading ? <h5>loading..</h5> : <h1> hello {showName && name }</h1>}
+    {loading ? <h4> loading..</h4>:<h1> I have made a {foo()} , hope you like it. </h1>}
+    <p>Hello from {name.toUpperCase()},Chirag and Prateek </p>  
+    </div>
+    //{loading ? <h5>loading..</h5> : <h1> hello {showName ? name : null  } </h1> } same as showName && name 
+    //<React.Fragment>
+    //after writing fragment above we can use <Fragment>
+    //</div className='App'>
+    //<>
+    //<h1> Hello from Harsh,Chirag and Pratik </h1>
+    //<p> wipro react js practice.</p>
+    //</>
+    //</React.Fragment>
+    //<Fragment>
+    //</div>
+
+  );
+ }
+}
+export default App;
+===============================================================================================================================================================================
